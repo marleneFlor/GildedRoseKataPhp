@@ -2,8 +2,7 @@
 
 declare(strict_types=1);
 
-namespace GildedRose;
-
+namespace GildedRose\Item\Application\Command;
 class CreateItemCommand
 {
     private function __construct(
@@ -13,9 +12,7 @@ class CreateItemCommand
     ) {
     }
 
-    public static function create(
-        string $name, int $sellIn, int $quality
-    ): self
+    public static function create(string $name, int $sellIn, int $quality): self
     {
         return new self($name, $sellIn, $quality);
     }

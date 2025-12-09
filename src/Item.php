@@ -9,7 +9,7 @@ class Item implements \Stringable
     public function __construct(
         public string $name,
         public int $sellIn,
-        public Quality $quality,
+        public int $quality
     ) {
     }
 
